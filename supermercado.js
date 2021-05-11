@@ -18,8 +18,10 @@ document.querySelector('input[type=submit]').addEventListener('click',()=>{
 
     let listaProdutos = document.querySelector('.lista-produtos');
     listaProdutos.innerHTML = "";
+    let soma = 0;
 
     items.map(function(val){
+        soma += parseFloat(val.valor);
         listaProdutos.innerHTML += `
             <div class="lista-produtos-single">
                 <h3>`+val.nome+`</h3>
@@ -27,6 +29,12 @@ document.querySelector('input[type=submit]').addEventListener('click',()=>{
             </div>
         `
     })
+
+    soma = soma.toFixed(2);
+    let somaProdutos = document.querySelector('.soma-total');
+    somaProdutos.innerHTML = `
+        <h3>Total: R$`+soma+`</h3>
+    `
 
     nomeProduto.value = "";
     precoProduto.value = "";
