@@ -56,3 +56,13 @@ h3.preco-produto > span{
     font-size: 25px;
     color: darkblue;
 }
+
+.botao-limpar{
+    text-align: right;
+    margin: 0 25px;
+}
+
+.botao-limpar > button{
+    height: 40px;
+    width: 60px;
+}
