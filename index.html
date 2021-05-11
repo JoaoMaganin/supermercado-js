@@ -3,8 +3,26 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <h3>Olá mundo</h3>
+        <header>
+            <h2>App Lista de SuperMercado</h2>
+        </header>
 
+        <div class="lista-cadastro">
+            <input type="text" name="nome-produto" placeholder="Nome do produto...">
+            <input type="number" name="valor-produto" placeholder="Preço do produto...">
+            <input type="submit" value="Cadastrar">
+        </div>
+
+        <div class="lista-produtos">
+            <div class="lista-produtos-single">
+                <h3>Redbull</h3>
+                <h3 class="preco-produto"><span>R$ 12,00</span></h3>
+            </div>
+        </div>
+
+        <div class="soma-total">
+            <h3>Total: R$0,00</h3>
+        </div>
 
         <script src="supermercado.js">
             
