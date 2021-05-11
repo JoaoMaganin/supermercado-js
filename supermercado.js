@@ -39,3 +39,10 @@ document.querySelector('input[type=submit]').addEventListener('click',()=>{
     nomeProduto.value = "";
     precoProduto.value = "";
 })
+
+document.querySelector('button').addEventListener('click', ()=>{
+    items = [];
+
+    document.querySelector('.lista-produtos').innerHTML = "";
+    document.querySelector('.soma-total h3').innerHTML = "Total: R$0,00";
+});
